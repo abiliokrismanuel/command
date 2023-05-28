@@ -1,0 +1,9 @@
+
+//mysqldump
+mysqldump -u root -p (nama database) > (nama bebas).sql
+
+//masuk rds
+mysql -h (nama endpoint rds) -P 3306 -u (nama username) -p 
+
+/restore ke rds
+mysql -u admin -p -h (endpoint rds)  (nama database di rds) < (nama bacukpannya).sql
