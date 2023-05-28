@@ -1,0 +1,7 @@
+//efs
+sudo mkdir efs 
+audo yum install -y amazon-efs-utils
+
+(Using NFS client)
+
+and then elb
