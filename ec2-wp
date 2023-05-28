@@ -1,0 +1,21 @@
+cara setup ec2 dengan installasi wordpress
+
+//install httpd
+sudo yum install httpd
+sudo systemctl start httpd
+sudo systemctl status httpd
+
+//Install php
+amazon-linux-extras
+amazon-linux-extras list | grep php
+sudo amazon-linux-extras install php8.1
+
+//install mariadb
+amazon-linux-extras
+sudo amazon-linux-extras install mariadb10.5
+sudo systemctl enable --now mariadb
+sudo mariadb-secure-installation
+mysql -u root -p
+
+//permission apache
+sudo chown -R apache:apache /var/www/htm
